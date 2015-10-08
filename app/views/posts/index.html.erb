@@ -1,1 +1,6 @@
-this is the index page
+<% @posts.each do |post| %>
+	<h2><%= link_to post.title, post %> </h2>
+<% end %>
+
+<%= link_to "Add New Inspiration", new_post_path %>
+
